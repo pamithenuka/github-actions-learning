@@ -1,5 +1,7 @@
 name: Hello World Workflow
 
+#This workflow is triggered on push events to the main and develop branches, as well as manually via the workflow_dispatch event.
+
 on:
   push:
     branches: [main, develop]
