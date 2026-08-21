@@ -32,8 +32,8 @@ jobs:
 
       - name: Access secret
         env:
-          MY_SECRET: ${{ secrets.MY_SECRET }}
-        run: 'echo "Secret length: ${#MY_SECRET}"'
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
+        run: 'echo "Secret length: ${#TEST_SECRET}"'
       
       - name: List files
         run: ls -la
